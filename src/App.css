@@ -1,0 +1,152 @@
+*, html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: linear-gradient(to top, #fff1eb 0%, blue 100%);
+  /* background-size: contain; */
+  background-attachment: fixed;
+}
+.form{
+  width: 50%;
+  margin: 50px auto;
+}
+
+.form input{
+  height: 50px;
+  outline: none;
+}
+.form input[type='submit']{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgba(94, 193, 220, 0.5);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 1px 1px 7px #78b8b8;
+}
+.form input[type='submit']:hover{
+  box-shadow: 2px 2px 15px #78b8b8;
+}
+
+.form .day-week{
+  width: 100%;
+  margin: 30px 0;
+}
+
+.form .btnday,
+.form .btnweek{
+  width: 47.5%;
+}
+
+.form .btnweek{
+  margin-left: 5%;
+}
+.form .btnday:hover,
+.form .btnweek:hover{
+  color: white;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(158, 158, 168); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  background: rgba(13, 149, 187, 0.5);
+  width: 15px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #044e7981;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #044e79; 
+}
+.loading{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px,-50px);
+  font-size: 30px;
+}
+
+.filed{
+  background: rgba(94, 113, 220, 0.5);
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  margin: auto;
+  transition: width 2s;
+  transition-duration: 2s;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 10px #78b8b8;
+  margin-bottom: 20px;
+}
+/* .filed:hover{
+  width: 100%;
+} */
+
+.form .btnsearch{
+  float: right;
+  width: 40px;
+  height: 40px;
+  color: rgba(94, 193, 220, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* .form .search{
+  background: none;
+  border: none;
+  float: left;
+  color: #222;
+  font-size: 16px;
+  transition: 1s;
+  line-height: 50px;
+  height: 100%;
+  width: 0%;
+  font-size: 20px;
+} */
+
+/* .search{
+  width: 80%;
+  padding-left: 10px;
+} */
+
+ /* .btnsearch{
+  color: rgba(0, 0, 0, 0.8);
+  background: rgb(243, 240, 240);
+} */
+
+.bad-request{
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  margin-top: 150px;
+}
+
+.msgerror{
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+.far{
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .form{
+    width: 90%;
+  }
+  .form input[type='submit']{
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
